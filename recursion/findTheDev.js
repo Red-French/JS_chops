@@ -29,7 +29,7 @@ const devs = [
     ]
   },
   {
-    "id": "red",
+    "id": "columbo",
     "name": "Peter Falk",
     "profession": "Programmer",
     "company": "Dept of TN",
@@ -49,9 +49,9 @@ const devs = [
     }
   },
   {
-    "id": "red",
+    "id": "popeye",
     "name": "Bluto Brutus",
-    "profession": "Software Developer",
+    "profession": "Software Engineer",
     "company": "HCA",
     "technology": [
       {"primaryLanguage": "JavaScript"},
