@@ -19,16 +19,19 @@ let categories = [
     parent: 'cats'}
 ];
 
-let makeTree = (categories, parent) => {  // pass in obj & parent of category wanted
+let makeTree = {
+    'factorial': (categories, parent) => {  // pass in obj & parent of category wanted
     let node = {};
     categories
       .filter(c => c.parent === parent)  // loop obj and get parents matching parent passed in
       .forEach(c =>  // loop through matching parents
-        node[c.id] = makeTree(categories, c.id))  // pass in obj & id of matching parents; found obj saved to node obj
+        node[c.id] = makeTree.factorial(categories, c.id))  // pass in obj & id of matching parents; found obj saved to node obj
       return node;
+    }
 }
 
-console.log(JSON.stringify(makeTree(categories, 'cats'), null, 2));  // parameters: obj to convert, replacer, space
+console.log(JSON.stringify(makeTree.factorial(categories, 'cats'), null, 2));  // parameters: obj to convert, replacer, space
+console.log(makeTree.valueOf());
 
 
 // *************** Fib sum & resulting array ***************
