@@ -46,7 +46,7 @@ let devs = [
     profession: "Back-End Programmer",
     company: "ZZZ Pillows",
     technology: "COBOL",
-      tech2: "DB2"}
+    tech2: "DB2"}
 ];
 
 const findTheDev = {
