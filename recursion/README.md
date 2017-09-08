@@ -1,5 +1,8 @@
 # Recursion
 
+findTheDev.js - recursion seeks developers with specific primary tech (JS) and prints their name and secondary tech/framework
+recursion.js - multiple/general
+
 Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem.  It's very useful for JSON trees.  You iterate over an operation by having a function call itself repeatedly until it arrives at a result.
 
 Recursion is best applied when you need to call the same function repeatedly with different parameters from within a loop. While it can be used in many situations, it is most effective for solving problems involving iterative branching, such as fractal math, sorting, or traversing the nodes of complex or non-linear data structures.
