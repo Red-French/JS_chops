@@ -55,7 +55,7 @@ const findTheDev = {
   devs
     .filter(dev => dev.technology === technology)
     .forEach(dev => {
-      devObj[dev.id] = findTheDev.locate(devs, dev.tech2)
+      devObj[dev.id] = findTheDev.locate(devs, dev.tech2)  // recursion
       devObj[dev.id]['fullname'] = dev.fullname
       devObj[dev.id]['primary'] = dev.technology
       devObj[dev.id]['secondary'] = dev.tech2
