@@ -1,3 +1,3 @@
 # JS_chops
 
-JS playground for practice
+Various JS notes.
