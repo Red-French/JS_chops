@@ -14,7 +14,7 @@ function extendDeep(policy, child) {
   for (prop in policy) {
     if(policy.hasOwnProperty(prop)) {
       if (typeof policy[prop] === "object") {
-        child[prop] = (policy[prop].toString() === "[object Array]")
+        child[prop] = Array.isArray(policy[prop])
           ? []
           : {};
           extendDeep(policy[prop], child[prop]);
