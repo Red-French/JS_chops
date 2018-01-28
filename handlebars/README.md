@@ -14,7 +14,7 @@ To use HTML tags or special characters in Handlebar templates, use either:
   name: "Yogi Berra",
   yogiBio: '<i>Lawrence Peter "Yogi" Berra (May 12, 1925 – September 22, 2015) was an American professional baseball catcher, who later took on the roles of manager, and coach. He played 19 seasons in Major League Baseball (MLB) (1946–63, 1965), all but the last for the New York Yankees.</i>&copy'
 });
-    ```
+```
 
 
 2) CUSTOM HELPER FUNCTION
