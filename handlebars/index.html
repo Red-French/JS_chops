@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Handlebars</title>
+
+    <style type="text/css">
+      .redText {color: red;}
+      .blueText {color: blue;}
+      .greenText {color: green;}
+    </style>
   </head>
   <body>
 
@@ -16,6 +22,7 @@
 
     <!-- Handlebars template (gets injected into above div) -->
     <script id="handlebars-template" type="text/x-handlebars-template">
+      <h2 style="color: blue">This Handlebars template is in the HTML</h2>
       <h1>{{title}}</h1>
       <div class="body">
         {{body}}
