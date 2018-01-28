@@ -34,3 +34,32 @@ To use HTML tags or special characters in Handlebar templates, use either:
     return new Handlebars.SafeString(theLink);  // prevents string from being escaped (so triple curly braces not required)
   });
 ```
+
+Passing attributes to a helper function:
+```
+Handlebars.registerHelper("sayHello", function(options) {
+  switch(options.data.lang) {
+    case "spanish":
+      return "Hola";
+      break;
+    case "french":
+      return "Bonjour";
+      break;
+    case "south":
+      return "Hey there";
+      break;
+    default: 
+      return "Hello";
+  }
+});
+
+const quoteData = template2({  // inject data into Handlebars template/partial
+  name: "Yogi Berra",
+  yogiBio: '<i>Lawrence Peter "Yogi" Berra (May 12, 1925 – September 22, 2015) was an American professional baseball catcher, who later took on the roles of manager, and coach. He played 19 seasons in Major League Baseball (MLB) (1946–63, 1965), all but the last for the New York Yankees.</i>&copy'
+}, 
+{
+  data: {  // data here is available to ALL helper functions via options.data.keyname
+      lang: "french"
+    }
+});
+```
