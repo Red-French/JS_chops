@@ -9,4 +9,5 @@ Arrays have useful methods which array-like objects don't have.  An empty array 
 
 * bind() - takes an object and method and binds the object as 'this' to the method
 
-### You can use call()/apply() to invoke a function immediately. bind() returns a bound function that, when executed later, will have the correct context ("this") for calling the original function. So, bind() can be used when a function needs to be called later (for an event, for example).
+### *call( )* and *apply( )* you can use to invoke a function *immediately*.
+### *bind( )* returns a bound function that, when *executed later*, will have the correct context ("this") for calling the original function. So, bind() can be used when a function needs to be called later (for an event, for example).
