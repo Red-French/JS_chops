@@ -162,3 +162,13 @@ const combinedStrength = heroes.reduce(addStrength, 0);
 
 console.log('reduce - strongestHero: ', strongestHero);
 console.log('reduce - combinedStrength, ', combinedStrength);
+
+// iterate only once over the array
+function processStrength({strongestHero2, combinedStrength2}, hero) {
+    return {
+        strongestHero2: greaterStrength(strongestHero2, hero),
+        combinedStrength2: addStrength(combinedStrength2, hero),
+    };
+}
+const {strongestHero2, combinedStrength2} = heroes.reduce(processStrength, {strongestHero2: {strength: 0}, combinedStrength2: 0});
+console.log('strongestHero2: ', {strongestHero2, combinedStrength2} )
